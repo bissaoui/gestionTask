@@ -1,0 +1,38 @@
+gestion-reservations/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── gestionreservations/
+│   │   │           ├── controllers/             // Contrôleurs REST
+│   │   │           │   ├── ReservationController.java
+│   │   │           │   ├── UserController.java
+│   │   │           │   └── ItemController.java
+│   │   │           ├── dto/                     // Objets de transfert de données (DTO)
+│   │   │           │   ├── ReservationDto.java
+│   │   │           │   ├── UserDto.java
+│   │   │           │   └── ItemDto.java
+│   │   │           ├── entities/                // Entités JPA
+│   │   │           │   ├── User.java
+│   │   │           │   ├── Item.java
+│   │   │           │   ├── Reservation.java
+│   │   │           │   └── Status.java          // Enum pour le statut
+│   │   │           ├── exceptions/              // Gestion des exceptions
+│   │   │           │   └── ResourceNotFoundException.java
+│   │   │           ├── repositories/            // Repositories pour JPA
+│   │   │           │   ├── UserRepository.java
+│   │   │           │   ├── ItemRepository.java
+│   │   │           │   └── ReservationRepository.java
+│   │   │           ├── services/                // Interfaces de services
+│   │   │           │   ├── ReservationService.java
+│   │   │           │   ├── UserService.java
+│   │   │           │   └── ItemService.java
+│   │   │           ├── services/impl/           // Implémentations de services
+│   │   │           │   ├── ReservationServiceImpl.java
+│   │   │           │   ├── UserServiceImpl.java
+│   │   │           │   └── ItemServiceImpl.java
+│   │   │           └── GestionReservationsApplication.java // Classe principale de l'application
+│   └── resources/
+│       ├── application.properties               // Configuration Spring Boot
+│       └── data.sql                             // Données d'initialisation de la base de données
+└── pom.xml                                      // Fichier de gestion des dépendances (Maven)
